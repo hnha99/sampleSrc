@@ -1,0 +1,2 @@
+-include ${PROJECT_DIR}/source/sdk/save_media/Makefile.mk
+-include ${PROJECT_DIR}/source/sdk/video/Makefile.mk
