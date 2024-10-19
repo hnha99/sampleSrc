@@ -23,16 +23,7 @@ STRIP =$(CROSS_COMPILE)strip
 
 -include $(PROJECT_DIR)/source/Makefile.mk
 
-
 CFLAGS += $(OPTIMIZE)
-CFLAGS += -ldl -lpthread -lrt -g 
-
-# libs
-CFLAGS +=-I$(PROJECT_DIR)/libs/inc
-
-
-# dependencies
-CFLAGS +=-I$(PROJECT_DIR)/deps/inc
 
 
 .PHONY : all flash create clean
