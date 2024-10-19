@@ -6,7 +6,7 @@ NAME_LIB	=
 OPTIMIZE	= -Wall -O2
 PROJECT_DIR = $(PWD)
 
-OBJ_DIR=${PROJECT_DIR}/_build
+OBJ_DIR=${PROJECT_DIR}/build
 
 -include $(PROJECT_DIR)/Makefile.conf
 -include $(PROJECT_DIR)/Makefile.sdk.conf
@@ -14,7 +14,7 @@ OBJ_DIR=${PROJECT_DIR}/_build
 CFLAGS +=$(FLAG_HAVE)
 
 # linux
-CROSS_COMPILE=asdk-linux-
+CROSS_COMPILE=
 
 CXX	  =$(CROSS_COMPILE)g++
 CC	  =$(CROSS_COMPILE)gcc
